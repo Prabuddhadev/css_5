@@ -1,0 +1,99 @@
+.header
+{
+    text-align: center;
+}
+span
+{
+    font-size: 60px;
+    text-shadow: 5px 5px 5px rgb(71, 71, 71);
+    box-shadow:10px 10px 10px rgb(95, 93, 93);
+    border-radius: 10px;
+}
+.sun 
+{
+    margin-left: 88%;
+    animation-name: sun;
+    animation-iteration-count: infinite;
+    animation-duration: 75s;
+    animation-timing-function: linear;
+}
+.city 
+{
+    width: 1000%;
+    height: 250px;
+    background-image: url(./city__1_.png);
+    background-repeat: repeat-x;
+    animation-name: city;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.road 
+{
+    height: 100%;
+    width: 1000%;
+    background-image: url(./image/road.jpg);
+    background-repeat: repeat-x;
+    animation-name: road;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.car 
+{
+    position: absolute;
+    top: 350px;
+    left: 30%;
+}
+.flag 
+{
+    position: relative;
+    bottom:450px;
+    left: 800px;
+}
+.wheel 
+{
+    position: absolute;
+    top: 460px;
+    left: 32.9%;
+}
+.wheel1 
+{
+    animation-name: wheels;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+.wheel2 
+{
+    animation-name: wheels;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    position: relative;
+    left: 212.2px;
+}
+@keyframes sun 
+{
+0% {
+    transform: translateX(-5px);
+}
+100% {
+    transform: translateX(-500px);
+}
+}
+@keyframes city {
+    100% {
+        transform: translateX(-3800px);
+    }
+}
+@keyframes wheels {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes road {
+    100%{
+        transform:translateX(-1000px);
+    }
+}
